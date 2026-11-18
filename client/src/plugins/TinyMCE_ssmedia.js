@@ -498,8 +498,8 @@ jQuery.entwine('ss', ($) => {
       let container = img.parent('.captionImage');
       let caption = container.find('.caption');
 
-      // Opt-in via the `use_figure_captions` config: when enabled, captioned
-      // images use figure/figcaption markup instead of the old div/p markup.
+      // Opt-in per editor config via the `use_figure_captions` TinyMCE option: when enabled,
+      // captioned images use figure/figcaption markup instead of the old div/p markup.
       const useFigureCaptions = editor.getInstance().getParam('use_figure_captions', false);
 
       const containerTag = useFigureCaptions
